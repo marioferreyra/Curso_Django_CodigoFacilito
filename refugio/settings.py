@@ -80,13 +80,13 @@ WSGI_APPLICATION = 'refugio.wsgi.application'
 
 DATABASES = {
     'default': {
+        # 'ENGINE': 'django.db.backends.sqlite3',
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'refugio',
         'USER': 'postgres',
-        'PASSWORD': 'angie',
+        'PASSWORD': 'mario',
         'HOST': 'localhost',
         'PORT': 5432,
-
     }
 }
 
@@ -140,6 +140,6 @@ LOGOUT_REDIRECT_URL = reverse_lazy('login')
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 25
-EMAIL_HOST_USER = 'cursodjangocf@gmail.com'
+EMAIL_HOST_USER = 'cursodjangocf@gmail.com'  # Cambiar esta constante por mail propio
 EMAIL_HOST_PASSWORD = 'cursodjango16'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
